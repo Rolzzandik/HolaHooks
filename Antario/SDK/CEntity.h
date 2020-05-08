@@ -496,7 +496,7 @@ public:
 		return GetValue<CBaseHandle>(m_hOwnerEntity);
 	}
 	auto ObserverTarget() -> CBaseHandle {
-		return *(CBaseHandle  *)((uintptr_t)this + 0x3388);
+		return *(CBaseHandle  *)((uintptr_t)this + 0x338C);
 	}
 	uintptr_t observer_target()
 	{
@@ -580,7 +580,7 @@ public:
 
 	CBaseHandle *GetWeapons()
 	{
-		return (CBaseHandle*)((DWORD)this + 0x2DE8);
+		return (CBaseHandle*)((DWORD)this + 0x2DF8);
 	}
 
 	bool IsKnifeorNade();
